@@ -1,0 +1,29 @@
+@charset "UTF-8";
+
+body{
+    background-color: linear-gradiente(90deg,
+     #0a70ad, #16b1ec );
+}
+
+h1{
+    color: #16b1ec;
+    text-align: center;
+    text-shadow: 2px, 2px, 2px, gray;
+}
+h2{
+   color: #0a70ad 
+}
+p{
+    text-align: justify;
+}
+main{
+    background-color: white;
+    width: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 50px;
+    box-shadow: 30px, 30px, 30px gray;
+    border: 2px solid gray;
+}
