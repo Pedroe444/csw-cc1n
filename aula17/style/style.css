@@ -1,0 +1,55 @@
+body{
+    background-color: #f8f8f8;
+    font-family: arial, sans-serif;
+}
+form{
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.box{
+    border: 2px solid #999;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: white;
+  width: 258px;
+  margin: 10px;
+}
+.opcao{
+    width: 90px;
+    height: 160px;
+}
+.coment{
+    width: 400px;
+    height: 250px;
+}
+.login{
+    height: 160px;
+    width: 200px;
+}
+.time{
+    width: 200px;
+    height: 160px;
+}
+.botoes{
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.botoes button{
+    padding: 10px 20px;
+    margin: 0 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4285f4;
+    color: white;
+    cursor: pointer;
+}
+
+.botoes button:hover {
+    background-color: #3367d6;
+  }
