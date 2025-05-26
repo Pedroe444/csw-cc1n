@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora com Switch case</title>
+    <link rel="stylesheet" href="./style/Style.css">
+</head>
+<body>
+
+    
+    <div class="calculadora">
+
+    <input placeholder="Número" type="number" id="numero1">
+
+    <select id="operador">
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="*">*</option>
+        <option value="/">/</option>
+    </select>
+
+    <input placeholder="Número" type="number" id="numero2">
+    
+    <button onclick="calcular()">Calcular</button>
+
+    
+    <div id="resultado"></div>
+
+    <script>
+        function calcular() {
+            var num1 = parseFloat(document.getElementById("numero1").value);
+            var num2 = parseFloat(document.getElementById("numero2").value);
+            var operador = document.getElementById("operador").value;
+            var resultado;
+
+            switch (operador) {
+                case "+":
+                    resultado = num1 + num2;
+                    break;
+                case "-":
+                    resultado = num1 - num2;
+                    break;
+                case "*":
+                    resultado = num1 * num2;
+                    break;
+                case "/":
+                    if (num2 === 0) {
+                        resultado = "Erro: Divisão por zero";
+                    } else {
+                        resultado = num1 / num2;
+                    }
+                    break;
+                default:
+                    resultado = "Operador inválido";
+            }
+
+            document.getElementById("resultado").innerText = "Resultado: " + resultado;
+        }
+   
+
+    </script>
+ </div>
+
+<h2>Calculadora de idade</h2>
+
+
+
+</body>
+</html>
